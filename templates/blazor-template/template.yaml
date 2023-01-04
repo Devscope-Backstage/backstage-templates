@@ -47,6 +47,8 @@ spec:
               - github.com
             allowedOwners:
               - Devscope-Backstage
+            allowedRepos:
+              - templates
   steps:
     - id: fetch
       name: Creating Blazor template
