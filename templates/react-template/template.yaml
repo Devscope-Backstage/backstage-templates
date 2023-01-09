@@ -3,7 +3,7 @@ kind: Template
 metadata:
   name: react-template
   title: React Template
-  description: Create a new React app using Cs
+  description: Create a new React app using Cs (publish to GitHub)
   tags:
     - cs
     - react
@@ -45,13 +45,14 @@ spec:
           ui:options:
             allowedHosts:
               - github.com
-
+            allowedOwners:
+              - Devscope-Backstage
   steps:
     - id: fetch
       name: Creating React template
       action: fetch:template
       input:
-        url: ./skeleton
+        url: ./skeleton-react
         values:
           name: ${{ parameters.name }}
           description: ${{ parameters.description }}
@@ -62,9 +63,10 @@ spec:
       name: Publish
       action: publish:github
       input:
-        allowedHosts: ["github.com"]
+        allowedHosts: github.com
         description: This is ${{ parameters.name }}
         repoUrl: ${{ parameters.repoUrl }}
+        repoVisibility: public
 
     - id: register
       name: Register
