@@ -3,7 +3,7 @@ kind: Template
 metadata:
   name: blazor-template
   title: Blazor Template
-  description: Create a new Blazor app
+  description: Create a new Blazor app (publish to Azure DevOps)
   tags:
     - cs
     - blazor
@@ -44,17 +44,17 @@ spec:
           ui:field: RepoUrlPicker
           ui:options:
             allowedHosts:
-              - github.com
+              - dev.azure.com
             allowedOwners:
-              - Devscope-Backstage
-            allowedRepos:
-              - templates
+              - Playground
+            allowedOrganizations:
+              - dvs
   steps:
     - id: fetch
       name: Creating Blazor template
       action: fetch:template
       input:
-        url: ./skeleton
+        url: ./skeleton-blazor
         values:
           name: ${{ parameters.name }}
           description: ${{ parameters.description }}
@@ -63,12 +63,12 @@ spec:
 
     - id: publish
       name: Publish
-      action: publish:github
+      action: publish:azure
       input:
-        allowedHosts: ["github.com"]
+        allowedHosts: ["dev.azure.com"]
         description: This is ${{ parameters.name }}
         repoUrl: ${{ parameters.repoUrl }}
-        repoVisibility: public # or 'internal' or 'private'
+        repoVisibility: public
 
     - id: register
       name: Register
