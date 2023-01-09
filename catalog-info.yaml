@@ -1,0 +1,64 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: dice-roller
+  description: It rolls dice
+  tags:
+    - go
+  annotations:
+    'backstage.io/kubernetes-id': dice-roller
+spec:
+  type: service
+  lifecycle: production
+  owner: user:guest
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: Backstage
+  description: Kubernetes object & Pipelines List for Backstage
+  annotations:
+    'dev.azure.com/project': Research
+    'dev.azure.com/build-definition': Devscope-Backstage.backstage
+    'backstage.io/kubernetes-id': backstage
+  links:
+    - url: https://backstage-bonfim.devscope.net/
+      title: Backstage URL
+    - url: https://github.com/Devscope-Backstage/backstage
+      title: Backstage Repository
+spec:
+  type: service
+  lifecycle: production
+  owner: user:guest
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: Meet-Easier
+  description: Check MeetEasier Pipelines and Repo info
+  annotations:
+    'dev.azure.com/project-repo': HostHelpdesk/MeetEasier
+    'dev.azure.com/project': HostHelpdesk
+    'dev.azure.com/build-definition': MeetEasier
+    'backstage.io/kubernetes-id': meet-easier
+  links:
+    - url: https://rooms.aad-bonfim.devscope.net/
+      title: MeetEasier URL
+    - url: https://dev.azure.com/dvs/HostHelpdesk/_git/MeetEasier
+      title: MeetEasier Repository
+spec:
+  type: service
+  lifecycle: production
+  owner: user:guest
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: eContrato-Backoffice
+  description: Backstage is an open-source developer portal that puts the developer experience first.
+  annotations:
+    'sonarqube.org/project-key': default/eContrato-Backoffice
+spec:
+  type: service
+  lifecycle: production
+  owner: user:guest
