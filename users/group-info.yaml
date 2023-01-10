@@ -5,7 +5,7 @@ metadata:
 spec:
   type: team
   profile:
-    displayName: Devscope-Backstage
+    displayName: Backstage-Maintainers
     picture: https://imgur.com/D0NnZuX
   children: []
 ---
