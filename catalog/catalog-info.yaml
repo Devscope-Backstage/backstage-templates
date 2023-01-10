@@ -57,7 +57,7 @@ metadata:
   name: PowerBI-DataPortal
   description: Backstage is an open-source developer portal that puts the developer experience second.
   annotations:
-    'sonarqube.org/project-key': PowerBI-DataPortal #sonarqube-azure-devops-products #SQL06\DEVSCOPEQUAL #sonar-bonfim #devscopequal
+    'sonarqube.org/project-key': YOUR_INSTANCE_NAME/PowerBI-DataPortal #sonarqube-azure-devops-products #SQL06\DEVSCOPEQUAL #sonar-bonfim #devscopequal
 spec:
   type: service
   lifecycle: production
