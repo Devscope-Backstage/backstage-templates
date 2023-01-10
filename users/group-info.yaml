@@ -19,3 +19,25 @@ spec:
     picture: https://avatars.githubusercontent.com/u/85238132?v=4
   memberOf:
     - Devscope-Backstage
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: ricardo.carvalho
+spec:
+  profile:
+    displayName: Ricardo Carvalho
+    picture: https://avatars.githubusercontent.com/u/107133819?v=4
+  memberOf:
+    - Devscope-Backstage
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: joao.teixeira
+spec:
+  profile:
+    displayName: João Teixeira
+    picture: https://avatars.githubusercontent.com/u/117747993?v=4
+  memberOf:
+    - Devscope-Backstage
