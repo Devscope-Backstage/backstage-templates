@@ -8,7 +8,7 @@ metadata:
     - cs
     - react
 spec:
-  owner: Devscope-Backstage
+  owner: Backstage-Maintainers
   type: app
   parameters:
     - title: Project Configuration
