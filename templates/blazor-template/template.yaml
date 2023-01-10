@@ -34,6 +34,7 @@ spec:
           ui:options:
             allowedKinds:
               - Group
+              - User
     - title: Repository Configuration
       required:
         - repoUrl
