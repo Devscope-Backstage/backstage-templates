@@ -69,7 +69,7 @@ spec:
         allowedHosts: ["dev.azure.com"]
         description: This is ${{ parameters.name }}
         repoUrl: ${{ parameters.repoUrl }}
-        repoVisibility: public
+        repoVisibility: private
 
     - id: register
       name: Register
