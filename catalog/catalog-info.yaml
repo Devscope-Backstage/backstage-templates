@@ -59,6 +59,6 @@ metadata:
   annotations:
     'sonarqube.org/project-key': sonarqube-azure-devops-products/PowerBI-DataPortal #sonarqube-azure-devops-products #SQL06\DEVSCOPEQUAL #sonar-bonfim #devscopequal
 spec:
-  type: library
+  type: service
   lifecycle: production
   owner: user:guest
