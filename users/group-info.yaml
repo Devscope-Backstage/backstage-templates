@@ -18,7 +18,7 @@ spec:
     displayName: Tiago Araujo
     picture: https://imgur.com/X0rQGvA
   memberOf:
-    - Devscope-Backstage
+    - backstage-maintainers
 ---
 apiVersion: backstage.io/v1alpha1
 kind: User
@@ -29,7 +29,7 @@ spec:
     displayName: Ricardo Carvalho
     picture: https://imgur.com/Anht249
   memberOf:
-    - Devscope-Backstage
+    - backstage-maintainers
 ---
 apiVersion: backstage.io/v1alpha1
 kind: User
@@ -40,4 +40,4 @@ spec:
     displayName: João Teixeira
     picture: https://imgur.com/hyTbCuJ
   memberOf:
-    - Devscope-Backstage
+    - backstage-maintainers
