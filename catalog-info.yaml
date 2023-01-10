@@ -57,7 +57,7 @@ metadata:
   name: eContrato-Backoffice
   description: Backstage is an open-source developer portal that puts the developer experience first.
   annotations:
-    'sonarqube.org/project-key': default/eContrato-Backoffice
+    'sonarqube.org/project-key': devscopequal/eContrato-Backoffice
 spec:
   type: service
   lifecycle: production
