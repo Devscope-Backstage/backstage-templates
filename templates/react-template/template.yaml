@@ -53,7 +53,7 @@ spec:
       name: Creating React template
       action: fetch:template
       input:
-        url: ./skeleton-react
+        url: ./skeleton
         values:
           name: ${{ parameters.name }}
           description: ${{ parameters.description }}
