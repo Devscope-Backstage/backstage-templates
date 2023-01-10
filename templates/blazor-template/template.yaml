@@ -55,7 +55,7 @@ spec:
       name: Creating Blazor template
       action: fetch:template
       input:
-        url: ./skeleton-blazor
+        url: ./skeleton
         values:
           name: ${{ parameters.name }}
           description: ${{ parameters.description }}
