@@ -1,0 +1,23 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  namespace: default
+  name: devscope-backstage
+spec:
+  type: team
+  profile:
+    displayName: Devscope-Backstage
+    picture: https://avatars.githubusercontent.com/u/117823694?s=200&v=4
+  members: [tiago.araujo]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  namespace: default
+  name: tiago.araujo
+spec:
+  profile:
+    displayName: Tiago Araujo
+    picture: https://avatars.githubusercontent.com/u/85238132?v=4
+  memberOf:
+    - devscope-backstage
