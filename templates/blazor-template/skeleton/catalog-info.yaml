@@ -3,6 +3,9 @@ kind: Component
 metadata:
   name: ${{values.name | dump}}
   description: ${{values.description | dump}}
+  links:
+    - url: ${{ steps.publish.output.repoContentsUrl }}
+      title: Repository
 spec:
   type: app
   lifecycle: experimental
