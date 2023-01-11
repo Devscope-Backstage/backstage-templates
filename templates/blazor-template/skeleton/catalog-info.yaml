@@ -4,7 +4,7 @@ metadata:
   name: ${{values.name | dump}}
   description: ${{values.description | dump}}
   links:
-    - url: ${{ steps.publish.output.repoContentsUrl }}
+    - url: ${{ steps.publish.output.remoteUrl }}
       title: Repository
 spec:
   type: app
