@@ -16,48 +16,13 @@
   "RootNamespace": "___values.name__",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\joao.teixeira\\Desktop\\backstage-templates\\templates\\blazor-template\\skeleton\\${{values.name}}\\Pages\\_Host.cshtml",
-      "TargetPath": "Pages\\_Host.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\joao.teixeira\\Desktop\\backstage-templates\\templates\\blazor-template\\skeleton\\${{values.name}}\\Shared\\MainLayout.razor",
-      "TargetPath": "Shared\\MainLayout.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\joao.teixeira\\Desktop\\backstage-templates\\templates\\blazor-template\\skeleton\\${{values.name}}\\App.razor",
-      "TargetPath": "App.razor",
-      "FileKind": "component"
-    },
-    {
       "FilePath": "c:\\Users\\joao.teixeira\\Desktop\\backstage-templates\\templates\\blazor-template\\skeleton\\${{values.name}}\\Pages\\_Layout.cshtml",
       "TargetPath": "Pages\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\joao.teixeira\\Desktop\\backstage-templates\\templates\\blazor-template\\skeleton\\${{values.name}}\\_Imports.razor",
-      "TargetPath": "_Imports.razor",
-      "FileKind": "componentImport"
-    },
-    {
       "FilePath": "c:\\Users\\joao.teixeira\\Desktop\\backstage-templates\\templates\\blazor-template\\skeleton\\${{values.name}}\\Pages\\FetchData.razor",
       "TargetPath": "Pages\\FetchData.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\joao.teixeira\\Desktop\\backstage-templates\\templates\\blazor-template\\skeleton\\${{values.name}}\\Shared\\NavMenu.razor",
-      "TargetPath": "Shared\\NavMenu.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\joao.teixeira\\Desktop\\backstage-templates\\templates\\blazor-template\\skeleton\\${{values.name}}\\Pages\\Error.cshtml",
-      "TargetPath": "Pages\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\joao.teixeira\\Desktop\\backstage-templates\\templates\\blazor-template\\skeleton\\${{values.name}}\\Pages\\Index.razor",
-      "TargetPath": "Pages\\Index.razor",
       "FileKind": "component"
     },
     {
@@ -66,9 +31,44 @@
       "FileKind": "component"
     },
     {
+      "FilePath": "c:\\Users\\joao.teixeira\\Desktop\\backstage-templates\\templates\\blazor-template\\skeleton\\${{values.name}}\\Pages\\Index.razor",
+      "TargetPath": "Pages\\Index.razor",
+      "FileKind": "component"
+    },
+    {
       "FilePath": "c:\\Users\\joao.teixeira\\Desktop\\backstage-templates\\templates\\blazor-template\\skeleton\\${{values.name}}\\Pages\\Counter.razor",
       "TargetPath": "Pages\\Counter.razor",
       "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\joao.teixeira\\Desktop\\backstage-templates\\templates\\blazor-template\\skeleton\\${{values.name}}\\Shared\\MainLayout.razor",
+      "TargetPath": "Shared\\MainLayout.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\joao.teixeira\\Desktop\\backstage-templates\\templates\\blazor-template\\skeleton\\${{values.name}}\\Shared\\NavMenu.razor",
+      "TargetPath": "Shared\\NavMenu.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\joao.teixeira\\Desktop\\backstage-templates\\templates\\blazor-template\\skeleton\\${{values.name}}\\App.razor",
+      "TargetPath": "App.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\joao.teixeira\\Desktop\\backstage-templates\\templates\\blazor-template\\skeleton\\${{values.name}}\\Pages\\Error.cshtml",
+      "TargetPath": "Pages\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\joao.teixeira\\Desktop\\backstage-templates\\templates\\blazor-template\\skeleton\\${{values.name}}\\Pages\\_Host.cshtml",
+      "TargetPath": "Pages\\_Host.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\joao.teixeira\\Desktop\\backstage-templates\\templates\\blazor-template\\skeleton\\${{values.name}}\\_Imports.razor",
+      "TargetPath": "_Imports.razor",
+      "FileKind": "componentImport"
     }
   ],
   "SerializationFormat": "0.2"
