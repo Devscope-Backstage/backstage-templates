@@ -49,8 +49,6 @@ spec:
               - dev.azure.com
             allowedOwners:
               - Playground
-            allowedOrganizations:
-              - dvs
   steps:
     - id: fetch
       name: Creating Blazor template
