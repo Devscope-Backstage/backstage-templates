@@ -21,7 +21,7 @@ metadata:
     'dev.azure.com/project': Research
     'dev.azure.com/build-definition': Devscope-Backstage.backstage
     'backstage.io/kubernetes-id': backstage
-    'backstage.io/techdocs-ref': dir:./docs
+    'backstage.io/techdocs-ref': dir:.
   links:
     - url: https://backstage-bonfim.devscope.net/
       title: Backstage URL
