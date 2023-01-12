@@ -24,7 +24,6 @@ spec:
           type: string
           description: Unique name of the component
           ui:field: EntityNamePicker
-          ui:autofocus: true
         java_package_name:
           title: Java Package Name
           type: string
@@ -64,6 +63,8 @@ spec:
       action: fetch:template
       input:
         url: ./skeleton
+        copyWithoutRender:
+          - .github/workflows/*
         values:
           component_id: ${{ parameters.component_id }}
           description: ${{ parameters.description }}
@@ -71,6 +72,7 @@ spec:
           java_package_name: ${{ parameters.java_package_name }}
           owner: ${{ parameters.owner }}
           destination: ${{ parameters.repoUrl | parseRepoUrl }}
+          http_port: 8080
 
     - id: publish
       name: Publish
