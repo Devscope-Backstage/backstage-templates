@@ -51,15 +51,3 @@ spec:
   type: service
   lifecycle: production
   owner: backstage-maintainers
----
-apiVersion: backstage.io/v1alpha1
-kind: Component
-metadata:
-  name: eContrato-Backoffice
-  description: econtrato sonarqube test
-  annotations:
-    'sonarqube.org/project-key': default/eContrato-Backoffice #sonarqube-azure-devops-products #SQL06\DEVSCOPEQUAL #sonar-bonfim #devscopequal
-spec:
-  type: service
-  lifecycle: production
-  owner: backstage-maintainers
