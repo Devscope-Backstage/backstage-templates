@@ -10,6 +10,7 @@ metadata:
 spec:
   owner: Backstage-Maintainers
   type: app
+  
   parameters:
     - title: Project Configuration
       required:
