@@ -7,7 +7,10 @@ spec:
   profile:
     displayName: Backstage-Maintainers
     picture: https://imgur.com/D0NnZuX
-  children: []
+  members:
+    - ricardo.carvalho
+    - tiago.araujo
+    - joao.teixeira
 ---
 apiVersion: backstage.io/v1alpha1
 kind: User
@@ -17,8 +20,6 @@ spec:
   profile:
     displayName: Tiago Araujo
     picture: https://imgur.com/X0rQGvA
-  memberOf:
-    - backstage-maintainers
 ---
 apiVersion: backstage.io/v1alpha1
 kind: User
@@ -28,8 +29,6 @@ spec:
   profile:
     displayName: Ricardo Carvalho
     picture: https://imgur.com/Anht249
-  memberOf:
-    - backstage-maintainers
 ---
 apiVersion: backstage.io/v1alpha1
 kind: User
@@ -39,5 +38,3 @@ spec:
   profile:
     displayName: João Teixeira
     picture: https://imgur.com/hyTbCuJ
-  memberOf:
-    - backstage-maintainers
