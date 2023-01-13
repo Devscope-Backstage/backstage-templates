@@ -15,6 +15,7 @@ spec:
       required:
         - name
         - description
+        - owner
       properties:
         name:
           title: Name
@@ -37,7 +38,7 @@ spec:
               - User
         docs:
           title: Docs
-          type: url
+          type: string
           description: OneNote URL with documentation
 
     - title: Repository Configuration
