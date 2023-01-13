@@ -37,7 +37,7 @@ spec:
               - User
         docs:
           title: Docs
-          type: string
+          type: url
           description: OneNote URL with documentation
 
     - title: Repository Configuration
