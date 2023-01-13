@@ -7,11 +7,6 @@ spec:
   profile:
     displayName: Backstage-Maintainers
   children: []
-  members:
-    - ricardo.carvalho
-    - tiago.araujo
-    - joao.teixeira
-    - hugo.sousa
 ---
 apiVersion: backstage.io/v1alpha1
 kind: User
@@ -22,6 +17,8 @@ metadata:
 spec:
   profile:
     displayName: Tiago Araujo
+  memberOf:
+    - backstage-maintainers
 ---
 apiVersion: backstage.io/v1alpha1
 kind: User
@@ -32,6 +29,8 @@ metadata:
 spec:
   profile:
     displayName: Ricardo Carvalho
+  memberOf:
+    - backstage-maintainers
 ---
 apiVersion: backstage.io/v1alpha1
 kind: User
@@ -42,6 +41,8 @@ metadata:
 spec:
   profile:
     displayName: João Teixeira
+  memberOf:
+    - backstage-maintainers
 ---
 apiVersion: backstage.io/v1alpha1
 kind: User
