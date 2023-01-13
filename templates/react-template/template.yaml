@@ -36,12 +36,6 @@ spec:
             allowedKinds:
               - Group
               - User
-        docs:
-          title: Docs
-          type: string
-          ui:field: DocsPicker
-          description: OneNote URL with documentation
-
     - title: Repository Configuration
       required:
         - repoUrl
