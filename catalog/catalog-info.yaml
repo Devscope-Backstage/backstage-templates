@@ -27,6 +27,8 @@ metadata:
       title: Backstage URL
     - url: https://github.com/Devscope-Backstage/backstage
       title: Backstage Repository
+    - url: https://devscope365.sharepoint.com/sites/ithelpdeskGroup/_layouts/OneNote.aspx?id=%2Fsites%2FithelpdeskGroup%2FSiteAssets%2FITHelpDesk%20Group%20Notebook&wd=target%282023.one%7CC43EBA38-4268-4504-B646-677F20E9CA0C%2FBackstage%20Development%20%28Devscope%5C%29%7C03AAB081-F619-4781-BB29-631E7CFDD394%2F%29onenote:https://devscope365.sharepoint.com/sites/ithelpdeskGroup/SiteAssets/ITHelpDesk%20Group%20Notebook/2023.one#Backstage%20Development%20(Devscope)&section-id={C43EBA38-4268-4504-B646-677F20E9CA0C}&page-id={03AAB081-F619-4781-BB29-631E7CFDD394}&end
+      title: Docs
 spec:
   type: service
   lifecycle: production
