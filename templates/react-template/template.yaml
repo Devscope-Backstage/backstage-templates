@@ -35,6 +35,11 @@ spec:
             allowedKinds:
               - Group
               - User
+        docs:
+          title: Docs
+          type: string
+          description: OneNote URL with documentation
+
     - title: Repository Configuration
       required:
         - repoUrl
