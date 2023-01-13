@@ -6,36 +6,49 @@ spec:
   type: team
   profile:
     displayName: Backstage-Maintainers
-    picture: https://imgur.com/D0NnZuX
   children: []
   members:
     - ricardo.carvalho
     - tiago.araujo
     - joao.teixeira
+    - hugo.sousa
 ---
 apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
   name: tiago.araujo
+  annotations:
+    'devscope.net/email': tiago.araujo@devscope.net
 spec:
   profile:
     displayName: Tiago Araujo
-    picture: https://imgur.com/X0rQGvA
 ---
 apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
   name: ricardo.carvalho
+  annotations:
+    'devscope.net/email': ricardo.carvalho@devscope.net
 spec:
   profile:
     displayName: Ricardo Carvalho
-    picture: https://imgur.com/Anht249
 ---
 apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
   name: joao.teixeira
+  annotations:
+    'devscope.net/email': joao.teixeira@devscope.net
 spec:
   profile:
     displayName: João Teixeira
-    picture: https://imgur.com/hyTbCuJ
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: hugo.sousa
+  annotations:
+    'devscope.net/email': hugo.sousa@devscope.net
+spec:
+  profile:
+    displayName: Hugo Sousa
