@@ -49,7 +49,7 @@ spec:
               - dev.azure.com
             allowedOwners:
               - Playground
-            allowedOrganization:
+            allowedOrganizations:
               - dvs
   steps:
     - id: fetch
