@@ -1,32 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tiago.araujo\\Desktop\\Workspace\\nettemplate\\${{values.name}}\\${{values.name}}.csproj": {}
+    "C:\\Users\\ricardo.carvalho\\Documents\\Devscope\\${{values.name}}Project\\${{values.name}}\\${{values.name}}.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tiago.araujo\\Desktop\\Workspace\\nettemplate\\${{values.name}}\\${{values.name}}.csproj": {
+    "C:\\Users\\ricardo.carvalho\\Documents\\Devscope\\${{values.name}}Project\\${{values.name}}\\${{values.name}}.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tiago.araujo\\Desktop\\Workspace\\nettemplate\\${{values.name}}\\${{values.name}}.csproj",
+        "projectUniqueName": "C:\\Users\\ricardo.carvalho\\Documents\\Devscope\\${{values.name}}Project\\${{values.name}}\\${{values.name}}.csproj",
         "projectName": "${{values.name}}",
-        "projectPath": "C:\\Users\\tiago.araujo\\Desktop\\Workspace\\nettemplate\\${{values.name}}\\${{values.name}}.csproj",
-        "packagesPath": "C:\\Users\\tiago.araujo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tiago.araujo\\Desktop\\Workspace\\nettemplate\\${{values.name}}\\obj\\",
+        "projectPath": "C:\\Users\\ricardo.carvalho\\Documents\\Devscope\\${{values.name}}Project\\${{values.name}}\\${{values.name}}.csproj",
+        "packagesPath": "C:\\Users\\ricardo.carvalho\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ricardo.carvalho\\Documents\\Devscope\\${{values.name}}Project\\${{values.name}}\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\tiago.araujo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\ricardo.carvalho\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net7.0"
+          "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -37,34 +35,38 @@
         }
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
-            "Microsoft.AspNetCore.OpenApi": {
-              "target": "Package",
-              "version": "[7.0.2, )"
-            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.10, )"
             },
             "Microsoft.EntityFrameworkCore.InMemory": {
               "target": "Package",
-              "version": "[7.0.2, )"
+              "version": "[6.0.10, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.10, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.10, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.4.0, )"
+              "version": "[6.2.3, )"
+            },
+            "prometheus-net": {
+              "target": "Package",
+              "version": "[7.0.0-pre-000305-75cc817, )"
+            },
+            "prometheus-net.AspNetCore": {
+              "target": "Package",
+              "version": "[7.0.0-pre-000305-75cc817, )"
             }
           },
           "imports": [
@@ -86,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
