@@ -36,8 +36,8 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: Meet-Easier
-  description: Check MeetEasier Pipelines and Repo info
+  name: Rooms
+  description: Check Rooms availibility at devscope
   annotations:
     'dev.azure.com/project-repo': HostHelpdesk/MeetEasier
     'dev.azure.com/project': HostHelpdesk
@@ -45,9 +45,9 @@ metadata:
     'backstage.io/kubernetes-id': meet-easier
   links:
     - url: https://rooms.aad-bonfim.devscope.net/
-      title: MeetEasier URL
+      title: Rooms URL
     - url: https://dev.azure.com/dvs/HostHelpdesk/_git/MeetEasier
-      title: MeetEasier Repository
+      title: Rooms Repository
 spec:
   type: service
   lifecycle: production
