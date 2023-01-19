@@ -51,7 +51,7 @@ spec:
               - Devscope-Backstage
   steps:
     - id: fetch
-      name: Creating React template
+      name: Creating ASPNET template
       action: fetch:template
       input:
         url: ./skeleton
