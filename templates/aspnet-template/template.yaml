@@ -10,12 +10,12 @@ metadata:
 spec:
   owner: Backstage-Maintainers
   type: app
+
   parameters:
     - title: Project Configuration
       required:
         - name
         - description
-        - owner
       properties:
         name:
           title: Name
@@ -65,7 +65,7 @@ spec:
       name: Publish
       action: publish:github
       input:
-        allowedHosts: github.com
+        allowedHosts: ["github.com"]
         description: This is ${{ parameters.name }}
         repoUrl: ${{ parameters.repoUrl }}
         repoVisibility: private
