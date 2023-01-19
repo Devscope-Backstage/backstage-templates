@@ -1,7 +1,7 @@
 apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
-  name: ASP NET API Template
+  name: ASP-NET-API-Template
   title: ASP NET API Template
   description: Create a new ASP NET API (Publish to GitHutb)
   tags:
