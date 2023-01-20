@@ -9,7 +9,7 @@ metadata:
     'backstage.io/kubernetes-id': dice-roller
 spec:
   type: service
-  lifecycle: production
+  lifecycle: development
   owner: user:ricardo.carvalho
 ---
 apiVersion: backstage.io/v1alpha1
@@ -30,7 +30,7 @@ metadata:
       title: Docs
 spec:
   type: service
-  lifecycle: production
+  lifecycle: development
   owner: backstage-maintainers
 ---
 apiVersion: backstage.io/v1alpha1
@@ -56,51 +56,65 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: Domain
 metadata:
-  name: Kubernetes
-  tags:
-    - k8s
-  description: Kubernetes is an open-source system for automating deployment, scaling, and management of containerized applications.
+  name: Datacenter
+  description: This domain defines the datacenter concept
 spec:
   owner: backstage-maintainers
 ---
 apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
-  name: Bonfim
+  name: Kubernetes-Bonfim
   tags:
     - k8s
+    - bonfim
   description: Kubernetes Cluster do Bonfim
 spec:
   owner: backstage-maintainers
-  domain: Kubernetes
+  domain: Datacenter
 ---
 apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
-  name: Francos
+  name: Kubernetes-Francos
   tags:
     - k8s
+    - francos
   description: Kubernetes Cluster do Francos
 spec:
   owner: backstage-maintainers
-  domain: Kubernetes
+  domain: Datacenter
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Resource
 metadata:
   name: SEQ00
   tags:
+    - vm
+  description: A virtual machine that supports logs from serilog
+spec:
+  type: VM
+  owner: backstage-maintainers
+  system: Kubernetes-Bonfim
+---
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: Serilog02
+  tags:
     - virtual machine
   description: A virtual machine that supports logs from serilog
 spec:
   type: VM
   owner: backstage-maintainers
-  system: Bonfim
+  system: Kubernetes-Bonfim
+  dependsOn:
+    - resource:SEQ00
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: Serilog02
+  name: Serilog
   tags:
     - serilog
     - logs
@@ -112,9 +126,9 @@ spec:
   type: service
   lifecycle: production
   owner: backstage-maintainers
-  system: Bonfim
+  system: Kubernetes-Bonfim
   dependsOn:
-    - resource:SEQ00
+    - resource:Serilog02
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -128,9 +142,9 @@ spec:
   type: service
   lifecycle: production
   owner: backstage-maintainers
-  system: Bonfim
+  system: Kubernetes-Bonfim
   dependsOn:
-    - component:Serilog02
+    - component:Serilog
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -144,6 +158,6 @@ spec:
   type: service
   lifecycle: production
   owner: backstage-maintainers
-  system: Bonfim
+  system: Kubernetes-Bonfim
   dependsOn:
-    - component:Serilog02
+    - component:Serilog
