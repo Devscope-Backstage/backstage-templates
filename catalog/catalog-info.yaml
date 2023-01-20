@@ -141,6 +141,8 @@ metadata:
     - serilog
     - logs
   description: Serilog provides diagnostic logging to files
+  annotations:
+    'backstage.io/kubernetes-id': serilog
   links:
     - url: https://serilog.aad-bonfim.devscope.net
       title: Serilog URL
@@ -160,6 +162,8 @@ metadata:
     - serilog
     - logs
   description: Serilog provides diagnostic logging to files (Remax logs specific)
+  annotations:
+    'backstage.io/kubernetes-id': serilog-remax
   links:
     - url: https://serilog-remax.aad-bonfim.devscope.net
       title: SerilogRemax URL
@@ -179,6 +183,8 @@ metadata:
     - serilog
     - logs
   description: Serilog provides diagnostic logging to files (Core logs specific)
+  annotations:
+    'backstage.io/kubernetes-id': serilog-core
   links:
     - url: https://serilog-products.aad-bonfim.devscope.net
       title: SerilogCore URL
