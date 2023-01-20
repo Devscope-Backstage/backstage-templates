@@ -169,7 +169,6 @@ spec:
   type: service
   lifecycle: production
   owner: backstage-maintainers
-  system: Bonfim
   dependsOn:
     - component:Serilog
     - resource:Kubernetes-Bonfim
@@ -189,7 +188,6 @@ spec:
   type: service
   lifecycle: production
   owner: backstage-maintainers
-  system: Bonfim
   dependsOn:
     - component:Serilog
     - resource:Kubernetes-Bonfim
