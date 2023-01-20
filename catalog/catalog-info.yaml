@@ -118,8 +118,6 @@ spec:
   type: VM
   owner: backstage-maintainers
   system: Bonfim
-  dependsOn:
-    - resource:Kubernetes-Bonfim
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Resource
