@@ -1,20 +1,6 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: dice-roller
-  description: It rolls dice
-  tags:
-    - nginx
-  annotations:
-    'backstage.io/kubernetes-id': dice-roller
-spec:
-  type: service
-  lifecycle: development
-  owner: user:ricardo.carvalho
----
-apiVersion: backstage.io/v1alpha1
-kind: Component
-metadata:
   name: Backstage
   description: Kubernetes object & Pipelines List for Backstage
   annotations:
