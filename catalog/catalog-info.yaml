@@ -117,6 +117,7 @@ metadata:
 spec:
   type: VM
   owner: backstage-maintainers
+  system: Bonfim
   dependsOn:
     - resource:Kubernetes-Bonfim
 ---
@@ -130,7 +131,7 @@ metadata:
 spec:
   type: VM
   owner: backstage-maintainers
-  system: Kubernetes-Bonfim
+  system: Bonfim
   dependsOn:
     - resource:SEQ00
 ---
@@ -149,9 +150,9 @@ spec:
   type: service
   lifecycle: production
   owner: backstage-maintainers
-  system: Kubernetes-Bonfim
   dependsOn:
     - resource:Serilog02
+    - resource:Kubernetes-Bonfim
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -168,9 +169,10 @@ spec:
   type: service
   lifecycle: production
   owner: backstage-maintainers
-  system: Kubernetes-Bonfim
+  system: Bonfim
   dependsOn:
     - component:Serilog
+    - resource:Kubernetes-Bonfim
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -187,6 +189,7 @@ spec:
   type: service
   lifecycle: production
   owner: backstage-maintainers
-  system: Kubernetes-Bonfim
+  system: Bonfim
   dependsOn:
     - component:Serilog
+    - resource:Kubernetes-Bonfim
