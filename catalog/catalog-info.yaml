@@ -10,7 +10,7 @@ metadata:
 spec:
   type: service
   lifecycle: production
-  owner: backstage-maintainers
+  owner: user:ricardo.carvalho
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -52,3 +52,60 @@ spec:
   type: service
   lifecycle: production
   owner: backstage-maintainers
+---
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: Kubernetes
+  description: Kubernetes Cluster do Bonfim
+spec:
+  owner: backstage-maintainers
+---
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: SEQ00
+  description: A virtual machine that supports logs from serilog
+spec:
+  type: VM
+  owner: backstage-maintainers
+  system: Kubernetes
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: Serilog02
+  description: Serilog provides diagnostic logging to files
+spec:
+  type: service
+  lifecycle: production
+  owner: backstage-maintainers
+  system: Kubernetes
+  dependsOn:
+    - resource:SEQ00
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: SerilogRemax
+  description: Serilog provides diagnostic logging to files (Remax logs specific)
+spec:
+  type: service
+  lifecycle: production
+  owner: backstage-maintainers
+  system: Kubernetes
+  dependsOn:
+    - component:Serilog02
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: SerilogCore
+  description: Serilog provides diagnostic logging to files (Core logs specific)
+spec:
+  type: service
+  lifecycle: production
+  owner: backstage-maintainers
+  system: Kubernetes
+  dependsOn:
+    - component:Serilog02
