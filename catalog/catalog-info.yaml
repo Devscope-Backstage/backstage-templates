@@ -138,6 +138,9 @@ metadata:
     - serilog
     - logs
   description: Serilog provides diagnostic logging to files (Remax logs specific)
+  links:
+    - url: https://serilog-remax.aad-bonfim.devscope.net
+      title: SerilogRemax URL
 spec:
   type: service
   lifecycle: production
@@ -154,6 +157,9 @@ metadata:
     - serilog
     - logs
   description: Serilog provides diagnostic logging to files (Core logs specific)
+  links:
+    - url: https://serilog-products.aad-bonfim.devscope.net
+      title: SerilogRemax URL
 spec:
   type: service
   lifecycle: production
