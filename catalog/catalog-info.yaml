@@ -64,11 +64,10 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
-  name: Kubernetes-Bonfim
+  name: Bonfim
   tags:
-    - k8s
     - bonfim
-  description: Kubernetes Cluster do Bonfim
+  description: Datacenter Bonfim
 spec:
   owner: backstage-maintainers
   domain: Datacenter
@@ -76,14 +75,37 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
-  name: Kubernetes-Francos
+  name: Francos
   tags:
-    - k8s
     - francos
-  description: Kubernetes Cluster do Francos
+  description: Datacenter Francos
 spec:
   owner: backstage-maintainers
   domain: Datacenter
+---
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: Kubernetes-Bonfim
+  tags:
+    - k8s
+  description: Kubernetes Cluster de Bonfim
+spec:
+  type: VM
+  owner: backstage-maintainers
+  system: Bonfim
+---
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: Kubernetes-Francos
+  tags:
+    - k8s
+  description: Kubernetes Cluster de Francos
+spec:
+  type: VM
+  owner: backstage-maintainers
+  system: Francos
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Resource
@@ -95,7 +117,8 @@ metadata:
 spec:
   type: VM
   owner: backstage-maintainers
-  system: Kubernetes-Bonfim
+  dependsOn:
+    - resource:Kubernetes-Bonfim
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Resource
