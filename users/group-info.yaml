@@ -35,18 +35,6 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
-  name: joao.teixeira
-  annotations:
-    'devscope.net/email': joao.teixeira@devscope.net
-spec:
-  profile:
-    displayName: João Teixeira
-  memberOf:
-    - backstage-maintainers
----
-apiVersion: backstage.io/v1alpha1
-kind: User
-metadata:
   name: hugo.sousa
   annotations:
     'devscope.net/email': hugo.sousa@devscope.net
