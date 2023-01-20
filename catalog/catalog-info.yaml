@@ -4,7 +4,7 @@ metadata:
   name: dice-roller
   description: It rolls dice
   tags:
-    - go
+    - nginx
   annotations:
     'backstage.io/kubernetes-id': dice-roller
 spec:
@@ -57,6 +57,8 @@ apiVersion: backstage.io/v1alpha1
 kind: Domain
 metadata:
   name: Kubernetes
+  tags:
+    - k8s
   description: Kubernetes is an open-source system for automating deployment, scaling, and management of containerized applications.
 spec:
   owner: backstage-maintainers
@@ -65,6 +67,8 @@ apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
   name: Bonfim
+  tags:
+    - k8s
   description: Kubernetes Cluster do Bonfim
 spec:
   owner: backstage-maintainers
@@ -74,6 +78,8 @@ apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
   name: Francos
+  tags:
+    - k8s
   description: Kubernetes Cluster do Francos
 spec:
   owner: backstage-maintainers
@@ -83,16 +89,21 @@ apiVersion: backstage.io/v1alpha1
 kind: Resource
 metadata:
   name: SEQ00
+  tags:
+    - virtual machine
   description: A virtual machine that supports logs from serilog
 spec:
   type: VM
   owner: backstage-maintainers
-  system: Kubernetes
+  system: Bonfim
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: Serilog02
+  tags:
+    - serilog
+    - logs
   description: Serilog provides diagnostic logging to files
   links:
     - url: https://serilog.aad-bonfim.devscope.net
@@ -101,7 +112,7 @@ spec:
   type: service
   lifecycle: production
   owner: backstage-maintainers
-  system: Kubernetes
+  system: Bonfim
   dependsOn:
     - resource:SEQ00
 ---
@@ -109,12 +120,15 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: SerilogRemax
+  tags:
+    - serilog
+    - logs
   description: Serilog provides diagnostic logging to files (Remax logs specific)
 spec:
   type: service
   lifecycle: production
   owner: backstage-maintainers
-  system: Kubernetes
+  system: Bonfim
   dependsOn:
     - component:Serilog02
 ---
@@ -122,11 +136,14 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: SerilogCore
+  tags:
+    - serilog
+    - logs
   description: Serilog provides diagnostic logging to files (Core logs specific)
 spec:
   type: service
   lifecycle: production
   owner: backstage-maintainers
-  system: Kubernetes
+  system: Bonfim
   dependsOn:
     - component:Serilog02
