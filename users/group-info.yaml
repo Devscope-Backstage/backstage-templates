@@ -23,6 +23,18 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
+  name: joao.teixeira
+  annotations:
+    'devscope.net/email': joao.teixeira@devscope.net
+spec:
+  profile:
+    displayName: João Teixeira
+  memberOf:
+    - backstage-maintainers
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
   name: ricardo.carvalho
   annotations:
     'devscope.net/email': ricardo.carvalho@devscope.net
