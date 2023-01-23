@@ -9,6 +9,28 @@ spec:
   children: []
 ---
 apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: devscope
+spec:
+  type: team
+  profile:
+    displayName: devscope
+  children: []
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: '*'
+  annotations:
+    'devscope.net/email': '*'
+spec:
+  profile:
+    displayName: '*'
+  memberOf:
+    - devscope
+---
+apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
   name: tiago.araujo
