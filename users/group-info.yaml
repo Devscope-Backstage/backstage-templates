@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
-  name: backstage-maintainers
+  name: Backstage-Maintainers
 spec:
   type: team
   profile:
@@ -28,7 +28,7 @@ spec:
   profile:
     displayName: Joao Teixeira
   memberOf:
-    - Products-Team
+    - Backstage-Maintainers
 ---
 apiVersion: backstage.io/v1alpha1
 kind: User
@@ -40,7 +40,7 @@ spec:
   profile:
     displayName: Tiago Araujo
   memberOf:
-    - backstage-maintainers
+    - Backstage-Maintainers
 ---
 apiVersion: backstage.io/v1alpha1
 kind: User
@@ -52,7 +52,7 @@ spec:
   profile:
     displayName: Ricardo Carvalho
   memberOf:
-    - backstage-maintainers
+    - Backstage-Maintainers
 ---
 apiVersion: backstage.io/v1alpha1
 kind: User
@@ -64,7 +64,7 @@ spec:
   profile:
     displayName: Hugo Sousa
   memberOf:
-    - backstage-maintainers
+    - Backstage-Maintainers
 ---
 apiVersion: backstage.io/v1alpha1
 kind: User
