@@ -29,6 +29,7 @@ metadata:
     'dev.azure.com/project': HostHelpdesk
     'dev.azure.com/build-definition': MeetEasier
     'backstage.io/kubernetes-id': meet-easier
+    'azure.com/tag-selector': HostHelpdesk/MeetEasier
   links:
     - url: https://rooms.aad-bonfim.devscope.net/
       title: Rooms URL

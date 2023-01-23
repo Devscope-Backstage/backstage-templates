@@ -1,12 +1,34 @@
 apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
-  name: backstage-maintainers
+  name: Backstage-Maintainers
 spec:
   type: team
   profile:
     displayName: Backstage-Maintainers
+  children: [Products-Team]
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: Products-Team
+spec:
+  type: team
+  profile:
+    displayName: Products-Team
   children: []
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: joao.teixeira
+  annotations:
+    'devscope.net/email': joao.teixeira@devscope.net
+spec:
+  profile:
+    displayName: Joao Teixeira
+  memberOf:
+    - Backstage-Maintainers
 ---
 apiVersion: backstage.io/v1alpha1
 kind: User
@@ -18,19 +40,7 @@ spec:
   profile:
     displayName: Tiago Araujo
   memberOf:
-    - backstage-maintainers
----
-apiVersion: backstage.io/v1alpha1
-kind: User
-metadata:
-  name: joao.teixeira
-  annotations:
-    'devscope.net/email': joao.teixeira@devscope.net
-spec:
-  profile:
-    displayName: João Teixeira
-  memberOf:
-    - backstage-maintainers
+    - Backstage-Maintainers
 ---
 apiVersion: backstage.io/v1alpha1
 kind: User
@@ -42,7 +52,7 @@ spec:
   profile:
     displayName: Ricardo Carvalho
   memberOf:
-    - backstage-maintainers
+    - Backstage-Maintainers
 ---
 apiVersion: backstage.io/v1alpha1
 kind: User
@@ -54,4 +64,388 @@ spec:
   profile:
     displayName: Hugo Sousa
   memberOf:
-    - backstage-maintainers
+    - Backstage-Maintainers
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: antonio.arantes
+  annotations:
+    'devscope.net/email': antonio.arantes@devscope.net
+spec:
+  profile:
+    displayName: Antonio Arantes
+  memberOf:
+    - Products-Team
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: joao.sousa
+  annotations:
+    'devscope.net/email': joao.sousa@devscope.net
+spec:
+  profile:
+    displayName: Joao Sousa
+  memberOf:
+    - Products-Team
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: frederico.junqueira
+  annotations:
+    'devscope.net/email': frederico.junqueira@devscope.net
+spec:
+  profile:
+    displayName: Frederico Junqueira
+  memberOf:
+    - Products-Team
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: antonio.coelho
+  annotations:
+    'devscope.net/email': antonio.coelho@devscope.net
+spec:
+  profile:
+    displayName: António Coelho
+  memberOf:
+    - Products-Team
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: antonio.coelho
+  annotations:
+    'devscope.net/email': antonio.coelho@devscope.net
+spec:
+  profile:
+    displayName: António Coelho
+  memberOf:
+    - Products-Team
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: alexandre.carreira
+  annotations:
+    'devscope.net/email': alexandre.carreira@devscope.net
+spec:
+  profile:
+    displayName: Alexandre Carreira
+  memberOf:
+    - Products-Team
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: andre.sousa
+  annotations:
+    'devscope.net/email': andre.sousa@devscope.net
+spec:
+  profile:
+    displayName: Andre Sousa
+  memberOf:
+    - Products-Team
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: elio.nogueira
+  annotations:
+    'devscope.net/email': elio.nogueira@devscope.net
+spec:
+  profile:
+    displayName: Elio Nogueira
+  memberOf:
+    - Products-Team
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: emanuel.cruz
+  annotations:
+    'devscope.net/email': emanuel.cruz@devscope.net
+spec:
+  profile:
+    displayName: Emanuel Cruz
+  memberOf:
+    - Products-Team
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: luis.araujo
+  annotations:
+    'devscope.net/email': luis.araujo@devscope.net
+spec:
+  profile:
+    displayName: Luis Araujo
+  memberOf:
+    - Products-Team
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: manuel.sambade
+  annotations:
+    'devscope.net/email': manuel.sambade@devscope.net
+spec:
+  profile:
+    displayName: Manuel Sambade
+  memberOf:
+    - Products-Team
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: ruben.sousa
+  annotations:
+    'devscope.net/email': ruben.sousa@devscope.net
+spec:
+  profile:
+    displayName: Ruben Sousa
+  memberOf:
+    - Products-Team
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: leandro.mendes
+  annotations:
+    'devscope.net/email': leandro.mendes@devscope.net
+spec:
+  profile:
+    displayName: Leandro Mendes
+  memberOf:
+    - Products-Team
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name:  marta.pereira
+  annotations:
+    'devscope.net/email': marta.pereira@devscope.net
+spec:
+  profile:
+    displayName:  Marta Pereira
+  memberOf:
+    - Products-Team
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: ruben.pinheiro
+  annotations:
+    'devscope.net/email': ruben.pinheiro@devscope.net
+spec:
+  profile:
+    displayName: Ruben Pinheiro
+  memberOf:
+    - Products-Team
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: joao.campos
+  annotations:
+    'devscope.net/email': joao.campos@devscope.net
+spec:
+  profile:
+    displayName: Joao Campos
+  memberOf:
+    - Products-Team
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: andre.reis
+  annotations:
+    'devscope.net/email': andre.reis@devscope.net
+spec:
+  profile:
+    displayName: Andre Reis
+  memberOf:
+    - Products-Team
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: claudia.pereira
+  annotations:
+    'devscope.net/email': claudia.pereira@devscope.net
+spec:
+  profile:
+    displayName: Claudia Pereira
+  memberOf:
+    - Products-Team
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: guilherme.reis
+  annotations:
+    'devscope.net/email': guilherme.reis@devscope.net
+spec:
+  profile:
+    displayName: Guilherme Reis
+  memberOf:
+    - Products-Team
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: susana.marinho
+  annotations:
+    'devscope.net/email': susana.marinho@devscope.net
+spec:
+  profile:
+    displayName: Susana Marinho
+  memberOf:
+    - Products-Team
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: carlos.duarte
+  annotations:
+    'devscope.net/email': carlos.duarte@devscope.net
+spec:
+  profile:
+    displayName: Carlos Duarte
+  memberOf:
+    - Products-Team
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: antonio.cabral
+  annotations:
+    'devscope.net/email': antonio.cabral@devscope.net
+spec:
+  profile:
+    displayName: Antonio Cabral
+  memberOf:
+    - Products-Team
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: raul.costa
+  annotations:
+    'devscope.net/email': raul.costa@devscope.net
+spec:
+  profile:
+    displayName: Raul Costa
+  memberOf:
+    - Products-Team
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: antonio.silva
+  annotations:
+    'devscope.net/email': antonio.silva@devscope.net
+spec:
+  profile:
+    displayName: Antonio Silva
+  memberOf:
+    - Products-Team
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: gil.pereira
+  annotations:
+    'devscope.net/email': gil.pereira@devscope.net 
+spec:
+  profile:
+    displayName: Gil Pereira
+  memberOf:
+    - Products-Team
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: daniel.evaristo
+  annotations:
+    'devscope.net/email': daniel.evaristo@devscope.net
+spec:
+  profile:
+    displayName: Daniel Evaristo
+  memberOf:
+    - Products-Team
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: teresa.castro
+  annotations:
+    'devscope.net/email': teresa.castro@devscope.net
+spec:
+  profile:
+    displayName: Teresa Castro
+  memberOf:
+    - Products-Team
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: wellyngton.borges
+  annotations:
+    'devscope.net/email': wellyngton.borges@devscope.net
+spec:
+  profile:
+    displayName: Wellyngton Borges
+  memberOf:
+    - Products-Team
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: gabriel.amaral
+  annotations:
+    'devscope.net/email': gabriel.amaral@devscope.net
+spec:
+  profile:
+    displayName: Gabriel Amaral
+  memberOf:
+    - Products-Team
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: luis.couto
+  annotations:
+    'devscope.net/email': luis.couto@devscope.net
+spec:
+  profile:
+    displayName: Luis Couto
+  memberOf:
+    - Products-Team
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: sara.santos
+  annotations:
+    'devscope.net/email': sara.santos@devscope.net
+spec:
+  profile:
+    displayName: Sara Santos
+  memberOf:
+    - Products-Team
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: thiago.arguelho
+  annotations:
+    'devscope.net/email': thiago.arguelho@devscope.net
+spec:
+  profile:
+    displayName: Thiago Arguelho
+  memberOf:
+    - Products-Team
