@@ -7,6 +7,8 @@ metadata:
     'dev.azure.com/project': Research
     'dev.azure.com/build-definition': Devscope-Backstage.backstage
     'backstage.io/kubernetes-id': backstage
+    'azure.com/tag-selector': 60779f17-4fa4-4521-969b-e43513bccba8/backstage #note: azure-resource-plugin 'anotation':<key>/<value> maybe not currectly
+    'azure.com/microsoft-web-sites': backstage #note: azure-website-plugin 'anotation':<key>/<value> maybe not currectly  
   links:
     - url: https://backstage-bonfim.devscope.net/
       title: Backstage URL
@@ -29,8 +31,6 @@ metadata:
     'dev.azure.com/project': HostHelpdesk
     'dev.azure.com/build-definition': MeetEasier
     'backstage.io/kubernetes-id': meet-easier
-    'azure.com/tag-selector': HostHelpdesk/MeetEasier #azure-resource-plugin note:<value> maybe not currectly
-    'azure.com/microsoft-web-sites': HostHelpdesk/MeetEasier #azure-website-plugin note:<value> maybe not currectly
   links:
     - url: https://rooms.aad-bonfim.devscope.net/
       title: Rooms URL
